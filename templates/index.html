@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- FrameGrab · Copyright (c) 2026 TheVibeFounder. All rights reserved. -->
+<html lang="en" data-transcribe="{{ 'true' if transcribe_enabled else 'false' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrameGrab — TheVibeFounder clip intake</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <script>
+    // Apply stored theme before first paint to avoid a flash. Dark is the default.
+    // 'vidclip-theme' is the pre-rename key, still read so a light-theme
+    // preference chosen before the rename is not silently reset to dark.
+    if (localStorage.getItem('framegrab-theme') === 'light' ||
+        localStorage.getItem('vidclip-theme') === 'light') {
+      document.documentElement.dataset.theme = 'light';
+    }
+  </script>
+  <link rel="stylesheet" href="/static/framegrab.css">
+
+</head>
+<body>
+  <nav class="topnav">
+    <a class="nav-link" id="historyNav" href="#history">History</a>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-pressed="false" aria-label="Switch to light theme"></button>
+  </nav>
+
+  <div class="page">
+    <header class="cover">
+      <h1><a href="#" aria-label="FrameGrab — back to intake">Frame<em>Grab</em></a></h1>
+      <p class="cover-sub" id="coverSub">Paste a link. Get every source asset.</p>
+    </header>
+
+    <main>
+    <div id="intakeView">
+    <label class="intake-label" for="urls">Source links</label>
+    <textarea aria-describedby="urlHint" id="urls" placeholder="Paste one or more URLs..." rows="2"></textarea>
+    <p class="hint" id="urlHint">Multiple links? Separate with spaces, commas, or newlines.</p>
+
+    <div class="controls">
+      <button class="fetch-btn" id="goBtn" onclick="go()">Extract</button>
+    </div>
+    <details class="extract-options">
+      <summary>Options</summary>
+      <label><input type="checkbox" id="audioOnly"> Audio only (MP3)</label>
+    </details>
+
+    <p id="queueSummary" class="hint" role="status" aria-live="polite"></p>
+    <div id="cards" class="cards"></div>
+
+    <section class="ledger" id="ledger" hidden>
+      <div class="ledger-head">
+        <h2 class="ledger-title" id="recentHeading">Recent receipts</h2>
+        <a class="ledger-link" id="viewAllHistory" href="#history">View all history</a>
+      </div>
+      <div id="ledgerCards"></div>
+    </section>
+    </div>
+
+    <section class="history-view" id="historyView" aria-labelledby="historyTitle" hidden>
+      <a class="history-back" href="#">← Back to intake</a>
+      <header>
+        <p class="history-kicker">Saved media ledger</p>
+        <h2 class="history-title" id="historyTitle">History</h2>
+        <p class="history-summary" id="historySummary" aria-live="polite">Loading receipts...</p>
+      </header>
+
+      <div class="history-tools" aria-label="History filters">
+        <label class="history-control">
+          <span>Search receipts</span>
+          <input id="historySearch" type="search" placeholder="Title, creator, URL, or spoken words" autocomplete="off">
+        </label>
+        <label class="history-control">
+          <span>Creator</span>
+          <select id="historyCreator"><option value="">All creators</option></select>
+        </label>
+        <label class="history-control">
+          <span>Source</span>
+          <select id="historySource"><option value="">All sources</option></select>
+        </label>
+        <label class="history-control">
+          <span>Media</span>
+          <select id="historyType">
+            <option value="">All media</option>
+            <option value="video">Video</option>
+            <option value="audio">Audio</option>
+            <option value="image">Images</option>
+            <option value="mixed">Mixed</option>
+          </select>
+        </label>
+      </div>
+
+      <p id="libraryError" class="history-empty" role="alert" hidden></p>
+      <button id="libraryRetry" class="history-load" type="button" hidden>Retry loading</button>
+      <div id="historyCards"></div>
+      <p class="history-empty" id="historyEmpty" hidden>No receipts match those filters.</p>
+      <button class="history-load" id="historyLoadMore" type="button" hidden>Load more</button>
+    </section>
+    <section id="assetView" class="asset-view" aria-labelledby="assetTitle" hidden>
+      <a class="history-back" href="#history">← Back to history</a>
+      <h2 id="assetTitle" class="history-title">Asset</h2>
+      <p id="assetMeta" class="history-summary"></p>
+      <p id="assetNotice" class="history-summary" role="status" aria-live="polite"></p>
+      <div class="asset-layout">
+        <div>
+          <div id="assetPlayer" class="asset-player"></div>
+          <div id="assetActions" class="asset-actions"></div>
+          <div id="assetSources" class="asset-sources" aria-label="Source assets"></div>
+          <section class="asset-derived" aria-label="Derived versions">
+          <h3>Saved frames</h3>
+          <div id="assetFrames" class="asset-frames"></div>
+          <h3>Compressed versions</h3>
+          <div id="assetVariants" class="asset-actions"></div>
+          </section>
+        </div>
+        <section class="asset-transcript" aria-labelledby="transcriptHeading">
+          <h3 id="transcriptHeading">Transcript</h3>
+          <p class="hint">Select a timestamp to jump to that moment.</p>
+          <div id="assetTranscript"></div>
+        </section>
+      </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+      <span class="wordmark" aria-label="TheVibeFounder"><span class="recede">The</span><span>Vibe</span><span class="recede">Founder</span></span>
+      <span>YouTube · TikTok · Instagram · X · Reddit · Vimeo · Loom · 1000 more</span>
+    </footer>
+  </div>
+
+  <script src="/static/workspace.js"></script>
+  <script src="/static/framegrab.js"></script>
+
+</body>
+</html>

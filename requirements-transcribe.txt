@@ -1,0 +1,2 @@
+mlx==0.32.4
+parakeet-mlx==0.5.3

@@ -1,0 +1,17 @@
+Read README.md, SETUP.md and AGENTS.md in this FrameGrab folder.
+Help me run FrameGrab locally on my computer.
+
+Check my operating system, Python version, FFmpeg, ffprobe and available port.
+Explain any missing dependencies before installing them. Use this folder's
+virtual environment and Downloads/ directory. Keep the server on 127.0.0.1;
+do not publish it, open a network port or create a public tunnel.
+
+Start with media-only mode. If I want transcription, explain the optional
+Apple Silicon setup before installing Parakeet MLX or downloading its models.
+Do not use my browser cookies, upload media, or send transcripts to another
+service without my explicit approval. Do not read unrelated folders.
+
+Run the attribution check, start the app and give me the local browser link.
+Ask me for one short media URL I own or have permission to download. Help me
+save it, review the preview and capture a frame. Tell me where the files are
+saved and whether transcription actually succeeded. Preserve source files.

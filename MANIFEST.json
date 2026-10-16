@@ -1,0 +1,190 @@
+{
+  "version": "1.0.1",
+  "files": [
+    {
+      "path": ".github/workflows/source-checks.yml",
+      "bytes": 468,
+      "sha256": "c8252bb66c284628b58f014953724691d16be2833f86384632f20e75744785c6"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 296,
+      "sha256": "b530d62e990dfb0f895312e4c972ea680411ba322dc5c47c7e7d5f3c45b297ee"
+    },
+    {
+      "path": "ACKNOWLEDGMENTS.md",
+      "bytes": 4151,
+      "sha256": "3c8a6d4552749bf08a9d1a8a373bbe36fc776d98aafc742fe43a39b9fa2d9599"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1063,
+      "sha256": "f0e8976e3df315737a89897a173d1fa4f3ac337a069518a86c774e3b5367e359"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 374,
+      "sha256": "8733caa4f694ef19fb4ccef4d38b921678061831d21d6cec49ac83e40b31d3a7"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 1063,
+      "sha256": "f0e8976e3df315737a89897a173d1fa4f3ac337a069518a86c774e3b5367e359"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 963,
+      "sha256": "f9a0cdda8d84e828cfd4b9c2f2cd18ea918a43396d298bd1b7fa74e54bff91e3"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1071,
+      "sha256": "0c5732430b0a1a90c856da6f19a05bd0415d1ae30941e33c2591be590da529d9"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 786,
+      "sha256": "f778928b1bcbc015144845deff7fc27e781b82cb49e944c509bbe91c44467c9d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3752,
+      "sha256": "09322398c678a9d399a4d206a1fe2768a89edee2ff3fcdaba0170eb0ff4fe7fe"
+    },
+    {
+      "path": "SETUP.md",
+      "bytes": 2717,
+      "sha256": "f1a6bd07234800db0a68e07b25429a9f9f01bfe687673e0c8732ecfc01ea509c"
+    },
+    {
+      "path": "START-HERE.txt",
+      "bytes": 1013,
+      "sha256": "2701cd62879bc06af6d52a71487b00e9512c8e9de448f9152c99290129d01087"
+    },
+    {
+      "path": "app.py",
+      "bytes": 94234,
+      "sha256": "22e853964d8d1faed71ae6491116288af8fc0b4b904927d4f957465233f51de4"
+    },
+    {
+      "path": "framegrab.sh",
+      "bytes": 1315,
+      "sha256": "7812eed96ee240a761d1ad661f3e107b51bfa1e926298a5447691e8072481042"
+    },
+    {
+      "path": "framegrab_core/__init__.py",
+      "bytes": 73,
+      "sha256": "fc5a3e62c224799f0412c7ac89764444304a30f3fff0e5045fdad8cdefaa113e"
+    },
+    {
+      "path": "framegrab_core/artifacts.py",
+      "bytes": 1168,
+      "sha256": "069e2b28f2bbea3dbe1530021f2174f204bdbc56bbf0629ad15e5a589f7fdab8"
+    },
+    {
+      "path": "framegrab_core/library.py",
+      "bytes": 9795,
+      "sha256": "94dc82d031bb1ba8da9b65afc90a4c517ea256ab7ec6d9a8b7d48fb93a7403dd"
+    },
+    {
+      "path": "framegrab_core/runtime.py",
+      "bytes": 775,
+      "sha256": "ede8f6249562ca62551dc93be8d6be1a15088f9f5a40073e1e6344534120cdf9"
+    },
+    {
+      "path": "framegrab_core/storage.py",
+      "bytes": 4723,
+      "sha256": "026b28f3fc296c4a313c3b951e245934692472e9618f403174885c6672ac46a9"
+    },
+    {
+      "path": "requirements-transcribe.txt",
+      "bytes": 32,
+      "sha256": "feac41c2dc0654f01541acf451d8de12ebfb5a159534b092bbdb13995b64130e"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 49,
+      "sha256": "de2717060024ede5f19fb2f9d4096f9bb45532524bbf4c18587ec12236787669"
+    },
+    {
+      "path": "scripts/verify_credit.py",
+      "bytes": 3920,
+      "sha256": "ba49e27ce7d44cf4b8de57e1062db8f58f7f1792c0624b3ece55048de860cf2a"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "bytes": 2701,
+      "sha256": "b710ab46fae7bb7a9548d171734799ea5f9d6fe191067ffd8b27db29f2eb7234"
+    },
+    {
+      "path": "setup-transcription.sh",
+      "bytes": 835,
+      "sha256": "5c1c14e9e3d3e38ba1357ad2a175dc2e6e439eaa1e7b3ec056cc952775d79bec"
+    },
+    {
+      "path": "static/favicon.ico",
+      "bytes": 2010,
+      "sha256": "1feb249661bd5f4683bbee0039adaca8a932b4e42753b603cf97cdb8059e54dd"
+    },
+    {
+      "path": "static/favicon.svg",
+      "bytes": 322,
+      "sha256": "52661592cd381fedd11b9c63a3883f8e78ee350b058e824915fb1d2cd80c9484"
+    },
+    {
+      "path": "static/fonts/OFL-DM-Serif-Display.txt",
+      "bytes": 4512,
+      "sha256": "aa49c876a28d8c0b0a3027d6c25b9c607eee8c0fb96165011d42a6ace1408fe1"
+    },
+    {
+      "path": "static/fonts/OFL-Geist-Mono.txt",
+      "bytes": 4386,
+      "sha256": "fb64c1011862d97fe49c633ad9180ffd80a61aab6ff220a2935704e8a0c3a7c4"
+    },
+    {
+      "path": "static/fonts/OFL-Inter.txt",
+      "bytes": 4376,
+      "sha256": "5dd548d31a85f756e01d63e00d7faf1e324103ed3e9102fcbbabf2cc2db6dd39"
+    },
+    {
+      "path": "static/fonts/dm-serif-display-italic-latin.woff2",
+      "bytes": 17660,
+      "sha256": "94b0e8fc568c1361f31de02a91297adf78a5a926f4a86932f22643e504cd012f"
+    },
+    {
+      "path": "static/fonts/dm-serif-display-regular-latin.woff2",
+      "bytes": 17844,
+      "sha256": "f273cf2c9ce9bc7d6b0f4fcb8aee72f8cf5a249991308b6a144217e0760c5d3f"
+    },
+    {
+      "path": "static/fonts/geist-mono-latin.woff2",
+      "bytes": 23108,
+      "sha256": "5f3d6ad60f29d6cb708414ec6887163d63bf197377ef5417d2483ff31ace6c3b"
+    },
+    {
+      "path": "static/fonts/inter-latin.woff2",
+      "bytes": 48432,
+      "sha256": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4"
+    },
+    {
+      "path": "static/framegrab.css",
+      "bytes": 21735,
+      "sha256": "e4daa16e833fcec14c522fd59826223511317a053d8b9791d3cda595694ae2a3"
+    },
+    {
+      "path": "static/framegrab.js",
+      "bytes": 51322,
+      "sha256": "d9332d82824f05d7bdc0de15530c156d18f8dae5363f2f633712167abe380e08"
+    },
+    {
+      "path": "static/workspace.js",
+      "bytes": 9981,
+      "sha256": "42af7da954cdd0e5e72c385507d44978228ea013c47c313fe84ca338523295ae"
+    },
+    {
+      "path": "templates/index.html",
+      "bytes": 5889,
+      "sha256": "a82899d7dc186ca8b3dc4fee43ba1a8d38d267177fcd9281f56460afa4b6a2a4"
+    }
+  ]
+}

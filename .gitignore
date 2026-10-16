@@ -1,0 +1,22 @@
+# Local media, credentials and runtime state never belong in this repository.
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.sqlite*
+venv/
+.venv/
+.transcribe-venv/
+Downloads/
+downloads/
+.pytest_cache/
+input/*
+!input/README.md
+work/*
+!work/README.md
+final/*
+!final/README.md
