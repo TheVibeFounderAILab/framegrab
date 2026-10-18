@@ -1,10 +1,9 @@
 # FrameGrab
 
-By [TheVibeFounder](https://github.com/thevibefounder), from
-[TheVibeFounder AI Lab](https://github.com/TheVibeFounderAILab).
+By [TheVibeFounder](https://github.com/thevibefounder).
 
-[Download the latest ZIP](https://github.com/TheVibeFounderAILab/framegrab/releases/latest/download/framegrab.zip)
-· [Release notes](https://github.com/TheVibeFounderAILab/framegrab/releases)
+[Download the latest ZIP](https://github.com/thevibefounder/framegrab/releases/latest/download/framegrab.zip)
+· [Release notes](https://github.com/thevibefounder/framegrab/releases)
 · [Chicago workshop](https://thevibefounder.com/chicago/ai-forge/)
 
 
